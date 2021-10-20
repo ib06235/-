@@ -10,7 +10,6 @@ for(x in 0:100){
   urls1[x] <- paste0(basic_url, x*10+3)
 }
 
-
 #뉴스기사제목
 links= NULL
 for(url1 in urls1){
@@ -19,9 +18,6 @@ for(url1 in urls1){
 }
 
 links <- links[is.na(links)==FALSE]
-
-
-
 
 
 txts <- NULL
@@ -37,13 +33,6 @@ for(url2 in urls2){
 txts_1 <- data.frame(txts)
 links_1 <- data.frame(links)
 word <- cbind(links_1, txts_1)
-
-
-
-
-
-
-
 
 
 # 1001~2000
@@ -98,7 +87,6 @@ for(url4 in urls4){
 links4 <- links4[is.na(links4)==FALSE]
 
 
-
 # 4001~5000
 urls5 <- NULL
 for(x in 401:500){
@@ -114,9 +102,6 @@ for(url5 in urls5){
 }
 
 links5 <- links5[is.na(links5)==FALSE]
-
-
-
 
 
 sum(duplicated(links5) == F)
