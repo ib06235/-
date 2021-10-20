@@ -1,4 +1,4 @@
-#네이버는 400P까지 적용 4000개가 최대기사. 중복되는 항목은 어쩔수없음.  다른사이트 or 최신순? 검색어 등 바꿔야 한다.
+#네이버는 뉴스기사 400페이지까지 존재
 library(tidytext); library(N2H4); library(tm)
 library(multilinguer); library(KoNLP)
 library(rvest); library(dplyr) ; library(XML)
